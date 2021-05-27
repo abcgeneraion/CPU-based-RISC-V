@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun May 09 16:13:35 2021
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Full Version
+Revision Name : CPU
+Top-level Entity Name : CPU
+Family : Cyclone II
+Device : EP2C70F896C6
+Timing Models : Final
+Total logic elements : 1,321 / 68,416 ( 2 % )
+    Total combinational functions : 1,315 / 68,416 ( 2 % )
+    Dedicated logic registers : 316 / 68,416 ( < 1 % )
+Total registers : 316
+Total pins : 67 / 622 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 6,144 / 1,152,000 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 300 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

@@ -1,0 +1,139 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		CPU_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C70F896C6
+set_global_assignment -name TOP_LEVEL_ENTITY CPU
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:04:34  MAY 09, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VERILOG_FILE alu.v
+set_global_assignment -name VERILOG_FILE ctrl.v
+set_global_assignment -name VERILOG_FILE ctrl_encode_def.v
+set_global_assignment -name VERILOG_FILE dm_4k.v
+set_global_assignment -name VERILOG_FILE EXT.v
+set_global_assignment -name VERILOG_FILE Im_4K.v
+set_global_assignment -name VERILOG_FILE IR.v
+set_global_assignment -name VERILOG_FILE latch_.v
+set_global_assignment -name VERILOG_FILE mux.v
+set_global_assignment -name VERILOG_FILE NPC.v
+set_global_assignment -name VERILOG_FILE PC.v
+set_global_assignment -name VERILOG_FILE RF.v
+set_global_assignment -name VERILOG_FILE SEG7_LUT.v
+set_global_assignment -name VERILOG_FILE SEG7_LUT_8.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name BDF_FILE CPU.bdf
+set_global_assignment -name MISC_FILE "E:/CPU/CPU/CPU.dpf"
+set_location_assignment PIN_T29 -to RESET
+set_location_assignment PIN_W27 -to overflow
+set_location_assignment PIN_Y24 -to state[0]
+set_location_assignment PIN_Y23 -to state[1]
+set_location_assignment PIN_AA27 -to state[2]
+set_location_assignment PIN_AA24 -to state[3]
+set_location_assignment PIN_AA23 -to view_Sel[0]
+set_location_assignment PIN_AB26 -to view_Sel[1]
+set_location_assignment PIN_AB25 -to view_Sel[2]
+set_location_assignment PIN_AC27 -to FM
+set_location_assignment PIN_AE8 -to oSEG0[0]
+set_location_assignment PIN_AF9 -to oSEG0[1]
+set_location_assignment PIN_AH9 -to oSEG0[2]
+set_location_assignment PIN_AD10 -to oSEG0[3]
+set_location_assignment PIN_AF10 -to oSEG0[4]
+set_location_assignment PIN_AD11 -to oSEG0[5]
+set_location_assignment PIN_AD12 -to oSEG0[6]
+set_location_assignment PIN_AG13 -to oSEG1[0]
+set_location_assignment PIN_AE16 -to oSEG1[1]
+set_location_assignment PIN_AF16 -to oSEG1[2]
+set_location_assignment PIN_AG16 -to oSEG1[3]
+set_location_assignment PIN_AE17 -to oSEG1[4]
+set_location_assignment PIN_AF17 -to oSEG1[5]
+set_location_assignment PIN_AD17 -to oSEG1[6]
+set_location_assignment PIN_AE7 -to oSEG2[0]
+set_location_assignment PIN_AF7 -to oSEG2[1]
+set_location_assignment PIN_AH5 -to oSEG2[2]
+set_location_assignment PIN_AG4 -to oSEG2[3]
+set_location_assignment PIN_AB18 -to oSEG2[4]
+set_location_assignment PIN_AB19 -to oSEG2[5]
+set_location_assignment PIN_AE19 -to oSEG2[6]
+set_location_assignment PIN_P6 -to oSEG3[0]
+set_location_assignment PIN_P4 -to oSEG3[1]
+set_location_assignment PIN_N10 -to oSEG3[2]
+set_location_assignment PIN_N7 -to oSEG3[3]
+set_location_assignment PIN_M8 -to oSEG3[4]
+set_location_assignment PIN_M7 -to oSEG3[5]
+set_location_assignment PIN_M6 -to oSEG3[6]
+set_location_assignment PIN_P1 -to oSEG4[0]
+set_location_assignment PIN_P2 -to oSEG4[1]
+set_location_assignment PIN_P3 -to oSEG4[2]
+set_location_assignment PIN_N2 -to oSEG4[3]
+set_location_assignment PIN_N3 -to oSEG4[4]
+set_location_assignment PIN_M1 -to oSEG4[5]
+set_location_assignment PIN_M2 -to oSEG4[6]
+set_location_assignment PIN_M3 -to oSEG5[0]
+set_location_assignment PIN_L1 -to oSEG5[1]
+set_location_assignment PIN_L2 -to oSEG5[2]
+set_location_assignment PIN_L3 -to oSEG5[3]
+set_location_assignment PIN_K1 -to oSEG5[4]
+set_location_assignment PIN_K4 -to oSEG5[5]
+set_location_assignment PIN_K5 -to oSEG5[6]
+set_location_assignment PIN_H6 -to oSEG6[0]
+set_location_assignment PIN_H4 -to oSEG6[1]
+set_location_assignment PIN_H7 -to oSEG6[2]
+set_location_assignment PIN_H8 -to oSEG6[3]
+set_location_assignment PIN_G4 -to oSEG6[4]
+set_location_assignment PIN_F4 -to oSEG6[5]
+set_location_assignment PIN_E4 -to oSEG6[6]
+set_location_assignment PIN_K3 -to oSEG7[0]
+set_location_assignment PIN_J1 -to oSEG7[1]
+set_location_assignment PIN_J2 -to oSEG7[2]
+set_location_assignment PIN_H1 -to oSEG7[3]
+set_location_assignment PIN_H2 -to oSEG7[4]
+set_location_assignment PIN_H3 -to oSEG7[5]
+set_location_assignment PIN_G1 -to oSEG7[6]
+set_location_assignment PIN_AJ6 -to pRFWr
+set_location_assignment PIN_AK5 -to pDMWr
+set_location_assignment PIN_AJ5 -to pPCWr
+set_location_assignment PIN_AJ4 -to pIRWr
+set_location_assignment PIN_AK3 -to pALU_ASel
+set_location_assignment PIN_AH4 -to pALU_BSel
+set_location_assignment PIN_AJ3 -to pNPCOp[0]
+set_location_assignment PIN_AJ2 -to pNPCOp[1]
+set_location_assignment PIN_AH3 -to pEXTOp[0]
+set_location_assignment PIN_AD14 -to pEXTOp[1]
+set_location_assignment PIN_AC13 -to pWDSel[0]
+set_location_assignment PIN_AB13 -to pWDSel[1]
+set_location_assignment PIN_AC12 -to pALUOp[0]
+set_location_assignment PIN_AB12 -to pALUOp[1]
+set_location_assignment PIN_AC11 -to pALUOp[2]
+set_location_assignment PIN_W25 -to pdlatch_en
+set_global_assignment -name VERILOG_FILE divider.v
+set_location_assignment PIN_AD15 -to CLK
